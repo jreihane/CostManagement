@@ -13,7 +13,7 @@ class TransportationFormatter(AbstractFormatter):
         return super().format("FFC000")
 
     def get_header(self):
-        return ('M', 'Dine out')
+        return ('M', 'Transport')
 
 
     def __init__(self):
