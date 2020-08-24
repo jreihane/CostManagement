@@ -1,1 +1,5 @@
 *.csv
+.settings
+.settings/*
+.vscode
+.vscode/*
