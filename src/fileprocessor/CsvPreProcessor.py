@@ -12,7 +12,7 @@ class CsvPreProcessor(object):
     classdocs
     '''
     
-    def clean_sheet(self):
+    def create_clean_sheet(self):
         temp_file_name = self.csv_file + "_"
         
         with open(self.csv_file, 'rt') as inp, open(temp_file_name, 'wt', newline='') as out:
@@ -27,7 +27,7 @@ class CsvPreProcessor(object):
      
 
     def determine_sheet_name(self, first_cell_value):
-        cost_date = datetime.strptime(first_cell_value.strip('"'), '%d/%m/%Y')
+        cost_date = datetime.strptime(first_cell_value.strip('"'), '%d/%m/%y')
         
         return cost_date.strftime("%B") + "-" + cost_date.strftime("%G")
 

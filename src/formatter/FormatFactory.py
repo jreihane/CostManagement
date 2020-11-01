@@ -16,7 +16,7 @@ class FormatFactory:
         elif (desc.find('RAIZ') > -1):
             return (RaizFormatter())
             
-        elif (desc.find('AURORA') > -1 or desc.find('NETFLIX') > -1 or desc.find('TELSTRA') > -1 or desc.find('RACT') > -1):
+        elif (desc.find('AURORA') > -1 or desc.find('NETFLIX') > -1 or desc.find('TELSTRA') > -1 or desc.find('RACT') > -1 or desc.find('BUPA') > -1):
             return (BillsFormatter())
         
         elif (desc.find('CALTEX') > -1):

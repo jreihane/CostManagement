@@ -13,7 +13,7 @@ def manageStatement():
      
     print("Cleaning CSV file")
     pre_processor = CsvPreProcessor(latest_file)
-    pre_processor.clean_sheet()
+    pre_processor.create_clean_sheet()
      
     print("Determining new sheet name")
     cost_list = pre_processor.read_file()
